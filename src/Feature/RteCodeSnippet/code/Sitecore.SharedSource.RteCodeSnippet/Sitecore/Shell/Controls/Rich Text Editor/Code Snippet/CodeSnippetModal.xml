@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<control xmlns:def="Definition" 
+         xmlns:html="http://www.sitecore.net/html"
+         xmlns="http://schemas.sitecore.net/Visual-Studio-Intellisense">
+  <RichText.CodeSnippet>
+    <FormDialog Icon="Network/32x32/link.png" Header="Paste your code snippet"
+      Text="Google pretify will take care of the rest." OKButton="Insert">
+      <script Type="text/javascript" Language="javascript" Src="/Sitecore/Shell/Controls/Rich Text Editor/Code Snippet/CodeSnippet.js">.</script>
+      <script Type="text/javascript" Language="javascript" Src="/Sitecore/Shell/Controls/Rich Text Editor/Code Snippet/GooglePrettify.js">.</script>
+      <CodeBeside Type="Sitecore.SharedSource.RteCodeSnippet.CodeSnippetModal, Sitecore.SharedSource.RteCodeSnippet"/>
+      <Border Padding="4px 0px 4px 0px">
+        <GridPanel Width="100%" Columns="1">
+          <Border Padding="0px 4px 0px 0px">
+            <Memo ID="CodeSnippetText" Width="100%" Height="315px" Wrap="off" Margin="0px" Padding="10px"/>
+          </Border>
+        </GridPanel>
+      </Border>
+    </FormDialog>
+  </RichText.CodeSnippet>
+</control>
